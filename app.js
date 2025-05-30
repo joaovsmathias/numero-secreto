@@ -10,8 +10,8 @@ function exibirTextoNaTela(tag, texto) {
 }
 
 function exibirMensagemInicial() {
-    exibirTextoNaTela('h1', 'Jogo do número secreto');
-    exibirTextoNaTela('p', 'Escolha um número entre 1 e 10');
+    exibirTextoNaTela('h1', 'Jogo do número secreto....');
+    exibirTextoNaTela('p', 'Escolha um número entre 1 e 10.....');
 }
 
 exibirMensagemInicial();
@@ -27,9 +27,9 @@ function verificarChute() {
         document.getElementById('reiniciar').removeAttribute('disabled');
     } else {
         if (chute > numeroSecreto) {
-            exibirTextoNaTela('p', 'O número secreto é menor');
+            exibirTextoNaTela('p', 'O número secreto é menor....');
         } else {
-            exibirTextoNaTela('p', 'O número secreto é maior');
+            exibirTextoNaTela('p', 'O número secreto é maior....');
         }
         tentativas++;
         limparCampo();
